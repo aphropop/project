@@ -53,6 +53,39 @@ class ProductItem{
 
 }
 
+class = Cart{ 
+    constructor() {
+        // Массив с добавленными товарами
+        this.addGoods = [];
+    }
+
+    addToCart() {} // Добавление в корзину
+    deleteFromCart() {} // Удаление из корзины
+    openCart() {} //Открытие корзины
+
+}
+
+class = CartProduct extends ProductItem {
+    constructor(title, img, price, quantity, sum) {
+        super(title,img);
+        this.price = price;
+        this.quantity = quantity; // Количество товаров
+        this.sum = 0; // Сумма заказа
+    }
+    render(){
+        return `<div class="cart-item">
+             <img src="${this.img}">
+             <h3>${this.title}</h3>
+             <p>${this.quantity}</p>
+             <p>${this.price} * ${this.quantity}</p>
+             <p>${this.sum}</p>
+             <button class="buy-btn">Купить</button>
+         </div>`
+ }
+}
+
+
+
 
 
 let list = new ProductList();
