@@ -53,7 +53,7 @@ class ProductItem{
 
 }
 
-class = Cart{ 
+class Cart{ 
     constructor() {
         // Массив с добавленными товарами
         this.addGoods = [];
@@ -65,7 +65,7 @@ class = Cart{
 
 }
 
-class = CartProduct extends ProductItem {
+class CartProduct extends ProductItem {
     constructor(title, img, price, quantity, sum) {
         super(title,img);
         this.price = price;
